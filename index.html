@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Piper - Roblox</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Reset */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;   /* stack vertically */
+        justify-content: flex-start;  /* center vertically */
+         align-items: center;      /* center horizontally */
+
+        gap: 20px;                /* space between boxes */
+}
+
+
+    .container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background: url("https://res.cloudinary.com/dmsbvfkwr/image/upload/v1775722643/Screenshot_2026-02-25_162754_taycxj_1_xatedj.png") center/cover no-repeat;
+
+      filter: blur(20px);
+      transform: scale(1.1);
+
+      z-index: -1;
+    }
+
+
+    .glass-box {
+      padding: 30px 40px;
+      border-radius: 15px;
+      justify-content: flex-start;
+      transform:translateY(180px);
+
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+      color: white;
+      max-width: 400px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+
+    <div class="glass-box">
+      <img src="images/ava.png" alt="Piper's Avatar" class="av" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 10px;">
+      <h1>Piper (@IsThatPiper)</h1>
+      <p>Welcome to my page!</p>
+    </div>
+    <div style="position: absolute; bottom: 20px; text-align: center; width: 100%; color: white;">
+      <p>Entirely made by Piper with <i class="fa-solid fa-heart" style="color: red;"></i></p>
+    </div>
+    <div class="glass-box-secondary">
+        <a href="https://www.roblox.com/games/8737602449/PLS-DONATE" target="_blank" rel="noopener noreferrer">
+          <img src="images/plsDonate.png" class="pls-d">
+        </a>
+        <a href="https://www.roblox.com/games/18345411337/Donation-Nation" target="_blank" rel="noopener noreferrer">  
+          <img src="images/donationNation.png" class="dn">
+        </a>
+        <p>
+        Donated 338,000 Robux in Pls Donate
+        </p>
+        <p>
+        Donated 253,000 Robux in Donation Nation
+        </p>
+        <p>
+        Former Staff for 2 servers: SJC Games and Stellar Script
+        </p>
+    </div>
+    <div style="position: absolute; bottom: 120px; text-align: center; width: 100%" class="socials">
+        <a href="https://roblox.com/users/394239757/profile" class="roblox-btn">Roblox</a>
+        <a href="https://discord.com/users/isthatpiper" class="discord-btn">Discord</a>
+    </div>
+  </div>
+</body>
+</html>
